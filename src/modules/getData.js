@@ -1,5 +1,5 @@
 const url = 'https://api.artic.edu/api/v1/artworks?page=10&limit=100';
-const likesURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/6MkPjjBjFG5Jhh37x3c8/likes'
+const likesURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/6MkPjjBjFG5Jhh37x3c8/likes';
 
 export async function getData() {
   try {

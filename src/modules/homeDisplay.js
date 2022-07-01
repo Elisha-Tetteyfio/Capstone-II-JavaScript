@@ -1,5 +1,5 @@
-import {getData, getLikes} from './getData.js';
-import like from '../assets/like.svg';
+import { getData, getLikes } from './getData.js';
+// import like from '../assets/like.svg';
 
 export const items = document.querySelector('#items');
 export const getArt = async () => {
@@ -7,7 +7,7 @@ export const getArt = async () => {
   const allLikes = await getLikes();
   let artHTML = '';
   result.data.forEach((element) => {
-    if(allLikes[`${element.image_id}`] === undefined){allLikes[element.image_id]={likes :0};}
+    if (allLikes[`${element.image_id}`] === undefined) { allLikes[element.image_id] = { likes: 0 }; }
     artHTML
     += `<li class="artElement">
       <div class="imgDiv">
