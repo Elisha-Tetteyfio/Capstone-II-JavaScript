@@ -9,10 +9,45 @@
 }
 
 footer {
-  position: fixed;
+  /* position: fixed;
   bottom: 0%;
-  left: 0%;
+  left: 0%; */
   background-color: rgb(243, 243, 243);
   width: 100%;
   padding: 1.5rem;
+}
+
+#items {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  list-style: none;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.artElement {
+  width: 90%;
+  margin: 15px 0;
+  background-color: #eee;
+}
+
+.artElement .imgDiv {
+  width: 100%;
+  height: 250px;
+}
+
+.like {
+  width: 20px;
+}
+
+.artElement .imgDiv img {
+  width: 100%;
+  height: 250px;
+}
+
+.artTitle {
+  font-style: italic;
+  height: 60px;
+  font-size: 15px;
+  line-height: 18px;
 }
