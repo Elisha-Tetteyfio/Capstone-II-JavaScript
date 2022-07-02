@@ -4,6 +4,7 @@ import './style.css';
 import './main.scss';
 import Logo from './assets/art-logo.png';
 import getData from './modules/getData.js';
+import {buildPopup, showPopup} from './modules/popup.js';
 
 const homeLink = document.querySelector('#homeLink');
 const logo = `<img src="${Logo}" alt="o" id="logo"></img>`;
@@ -22,13 +23,15 @@ const getArt = async () => {
             <i></i>
             <div>5 likes</div>
         </div>
-        <button type="button">Comments</button>
+        <button class="comment-btn" type="button">Comments</button>
     </li>`;
   });
   items.innerHTML = artHTML;
 };
 
 getArt();
+
+buildPopup();
 
 const addup = () => {
   const a = 2;
