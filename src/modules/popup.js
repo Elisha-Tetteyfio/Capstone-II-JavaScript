@@ -1,5 +1,5 @@
 import { getData } from './getData.js';
-import { showComment, listenForFormSubmission } from './comments.js';
+import { showComment, listenForFormSubmission, commnts } from './comments.js';
 
 export const popup = document.getElementById('popup');
 
@@ -96,4 +96,5 @@ export const buildPopup = async (id) => {
   popup.innerHTML += popupHTML;
   listenForFormSubmission(id);
   await showComment(id);
+  await commnts(id);
 };
