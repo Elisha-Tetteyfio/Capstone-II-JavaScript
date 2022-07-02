@@ -10,6 +10,7 @@ import { buildPopup, closeModal, displayPopup } from './modules/popup.js';
 
 import { getArt } from './modules/homeDisplay.js';
 import { getBtn } from './modules/addLike.js';
+import { count } from './modules/itemsCounter.js';
 
 const homeLink = document.querySelector('#homeLink');
 const logo = `<img src="${Logo}" alt="o" id="logo"></img>`;
@@ -22,3 +23,4 @@ const Buildpage = async () => {
 
 Buildpage();
 getBtn();
+count();
