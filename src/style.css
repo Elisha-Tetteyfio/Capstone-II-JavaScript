@@ -8,6 +8,22 @@
   width: 7rem;
 }
 
+#popup {
+ position: fixed;
+ width: 100%;
+ height: 105vh;
+ margin: 0;
+ left: 0;
+ top: 0;
+}
+
+.popup-close-button {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: larger;
+}
+
 footer {
   position: fixed;
   bottom: 0%;
