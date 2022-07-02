@@ -23,8 +23,7 @@ export const getBtn = async () => {
       const id = e.target.id.split('Like')[0]; // This line is to return the actual ID removing the appended 'Like' at the end
 
       likeFn(id);
-      // window.location.reload();
-      // setTimeout(window.location.reload.bind(location), 300);
+
       setTimeout(() => window.location.reload(), 300);
     });
   });
