@@ -54,7 +54,6 @@ export const listenForFormSubmission = (id) => {
 
 export const commnts = async (artID) => {
   const result = await showComment(artID);
-  console.log(result.length);
 
   const numOfComments = document.querySelector('.comments-header');
   numOfComments.innerHTML += `(${result.length})`;
