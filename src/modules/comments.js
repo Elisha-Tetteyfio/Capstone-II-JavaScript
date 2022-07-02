@@ -1,6 +1,6 @@
 const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/6MkPjjBjFG5Jhh37x3c8/comments';
 
-const addComments = (commentData) => {
+export const addComments = (commentData) => {
   const commentsList = document.querySelector('.comments-list');
   const listItem = document.createElement('li');
   listItem.innerHTML = ` <li>
@@ -54,7 +54,6 @@ export const listenForFormSubmission = (id) => {
 
 export const commnts = async (artID) => {
   const result = await showComment(artID);
-  console.log(result.length);
 
   const numOfComments = document.querySelector('.comments-header');
   numOfComments.innerHTML += `(${result.length})`;
