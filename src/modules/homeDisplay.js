@@ -1,5 +1,5 @@
 import { getData, getLikes } from './getData.js';
-// import like from '../assets/like.svg';
+import like from '../assets/like.svg';
 
 export const items = document.querySelector('#items');
 export const getArt = async () => {
@@ -7,7 +7,10 @@ export const getArt = async () => {
   const allLikes = await getLikes();
   let artHTML = '';
   result.data.forEach((element) => {
-    if (allLikes[`${element.image_id}`] === undefined) { allLikes[element.image_id] = { likes: 0 }; }
+    if (allLikes[`${element.image_id}`] === undefined) { allLikes.push({ item_id: element.image_id, likes: 0 }); }
+
+    const index = allLikes.findIndex((obj) => obj.item_id === element.image_id);
+
     artHTML
     += `<li class="artElement">
       <div class="imgDiv">
@@ -16,11 +19,13 @@ export const getArt = async () => {
       <div class="infoDiv">
         <div class="artTitle"> ${element.title} </div>
         <div>
-          <div>${allLikes[`${element.image_id}`].likes} like(s)</div>
+          <div> <img src="${like}" alt="like" id="${element.image_id}Like" class="like"> </div>
+          <div> ${allLikes[index].likes}  </div>
         </div>
       </div>
       <button type="button">Comments</button>
     </li>`;
   });
   items.innerHTML = artHTML;
+  return (allLikes);
 };
