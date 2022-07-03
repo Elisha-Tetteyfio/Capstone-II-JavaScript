@@ -22,7 +22,7 @@ export const showComment = async (artID) => {
   data.forEach((comment) => {
     addComments(comment);
   });
-  return(data);
+  return (data);
 };
 
 export const listenForFormSubmission = (id) => {
@@ -58,5 +58,4 @@ export const commnts = async (artID) => {
 
   const numOfComments = document.querySelector('.comments-header');
   numOfComments.innerHTML += `(${result.length})`;
-
 };
