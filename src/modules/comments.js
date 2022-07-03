@@ -22,6 +22,7 @@ export const showComment = async (artID) => {
   data.forEach((comment) => {
     addComments(comment);
   });
+  return(data);
 };
 
 export const listenForFormSubmission = (id) => {
@@ -49,4 +50,13 @@ export const listenForFormSubmission = (id) => {
       e.target.reset();
     }
   });
+};
+
+export const commnts = async (artID) => {
+  const result = await showComment(artID);
+  console.log(result.length);
+
+  const numOfComments = document.querySelector('.comments-header');
+  numOfComments.innerHTML += `(${result.length})`;
+
 };
