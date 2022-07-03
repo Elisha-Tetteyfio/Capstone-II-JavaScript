@@ -1,5 +1,6 @@
 import { getData, getLikes } from './getData.js';
 import like from '../assets/like.svg';
+import { buildPopup, displayPopup } from './popup.js';
 
 export const items = document.querySelector('#items');
 export const getArt = async () => {
@@ -17,15 +18,36 @@ export const getArt = async () => {
         <img src="https://www.artic.edu/iiif/2/${element.image_id}/full/200,/0/default.jpg" alt="${element.title}">
       </div>
       <div class="infoDiv">
-        <div class="artTitle"> ${element.title} </div>
+        <p class="artTitle">${element.title}</p>
         <div>
           <div> <img src="${like}" alt="like" id="${element.image_id}Like" class="like"> </div>
           <div> ${allLikes[index].likes}  </div>
         </div>
       </div>
-      <button type="button">Comments</button>
+      <button class="comment-btn" type="button">Comments</button>
     </li>`;
   });
   items.innerHTML = artHTML;
+
+  const activateCommentBtn = async () => {
+    const result = await getData();
+    const commentBtns = document.querySelectorAll('.comment-btn');
+    commentBtns.forEach((button) => {
+      button.addEventListener('click', async () => {
+        const Details = button.parentElement.firstChild.nextSibling;
+        const artworkTitle = Details.nextSibling.nextSibling.firstChild.nextSibling.textContent;
+        const targetArt = result.data.find((items) => items.title === artworkTitle);
+
+        const { id } = targetArt;
+
+        if (id) {
+          await buildPopup(id);
+          displayPopup();
+        }
+      });
+    });
+  };
+
+  activateCommentBtn();
   return (allLikes);
 };

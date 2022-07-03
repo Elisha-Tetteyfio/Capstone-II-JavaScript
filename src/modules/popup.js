@@ -1,4 +1,4 @@
-import getData from './getData.js';
+import { getData } from './getData.js';
 import { showComment, listenForFormSubmission } from './comments.js';
 
 export const popup = document.getElementById('popup');
