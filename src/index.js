@@ -8,6 +8,8 @@ import { getArt } from './modules/homeDisplay.js';
 import { getBtn } from './modules/addLike.js';
 import { count } from './modules/itemsCounter.js';
 
+History.scrollRestoration = 'manual';
+
 const homeLink = document.querySelector('#homeLink');
 const logo = `<img src="${Logo}" alt="o" id="logo"></img>`;
 homeLink.innerHTML += logo;
