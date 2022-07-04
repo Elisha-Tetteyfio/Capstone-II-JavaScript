@@ -1,62 +1,57 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Capstone 2
 
-> Description the project.
+> Pair programming to develop a website.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML & CSS
+- JavaScript
+- Webpack
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
+## Here is a link to the Video we made to prresent the UI
+[Team recording](https://drive.google.com/file/d/1nQsvdLb80W0gvO_x-u5ase1OECk3zD3G/view?usp=sharing)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+- run `git clone https://github.com/Elisha-Tetteyfio/Capstone-II-JavaScript.git` in your terminal.
+- switch to the project's directory
 
 ### Prerequisites
+- HTML & CSS
+- JavaScript
+- Webpack
+- Understanding of APIs
 
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- run `npm install`
+- run `npm start`
 
 ## Authors
 
-👤 **Author1**
+👤 **Elisha Tetteyfio**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/elisha-tetteyfio)
+- Twitter: [@twitterhandle](https://twitter.com/Nii_Alyasa)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/tetteyfio-elisha)
 
-👤 **Author2**
+👤 **Suleiman Olaide**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Ceemos96)
+- Twitter: [@twitterhandle](https://twitter.com/Ceemos_dev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/suleiman-olaide-97689b154/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Elisha-Tetteyfio/Capstone-II-JavaScript/issues).
 
 ## Show your support
 
